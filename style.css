@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+#city_name{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#city_weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}
+
+#city_temp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;
+}
+
+#city_temp h1{
+    font-size: 8rem;
+}
+
+#city_wx h1{
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+#future_weather{
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; 
+}
