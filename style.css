@@ -45,3 +45,16 @@
     flex-direction: column;
     overflow-y: auto; 
 }
+
+#future_item{
+    padding: 15px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#future_rain{
+    padding: 5px;
+}
+
