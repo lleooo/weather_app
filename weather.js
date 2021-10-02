@@ -22,9 +22,9 @@ function show_weather(weather) {
     city_name.innerHTML = `
     <h1>${weather[0].locationName}</h1>`;
     city_temp.innerHTML = `
-    <h1>${weather[0].weatherElement[1].time[0].elementValue[0].value}</h1>`;
+    <h1>${weather[0].weatherElement[1].time[0].elementValue[0].value}<span>°C</span></h1>`;
     city_wx.innerHTML = `
-    <h1>${weather[0].weatherElement[2].time[0].elementValue[1].value}</h1>`;
+    <h1>${weather[0].weatherElement[0].time[0].elementValue[0].value}</h1>`;
 
     weather[0].weatherElement[1].time.forEach(element => {
         weather[0].weatherElement[3].time.forEach(ev => {
@@ -37,7 +37,7 @@ function show_weather(weather) {
 
                 <div id=future_rain>rain:${ev.elementValue[0].value}%</div>
 
-                <div id=future_temp>${element.elementValue[0].value}C</div>
+                <div id=future_temp>${element.elementValue[0].value}°</div>
                          
                 `
                 console.log(ev.elementValue[0].value)
