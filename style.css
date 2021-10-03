@@ -26,7 +26,7 @@
     flex-direction: column;
     align-items: center;
     height: 50%;
-
+    position: relative;
 }
 
 #city_temp{
@@ -52,6 +52,13 @@
     padding-top: 1rem;
 }
 
+#next_page{
+    position: absolute;
+    top: 6.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+}
+
 #future_weather{
     height: 35%;
     display: flex;
@@ -62,7 +69,7 @@
 }
 
 #future_item{
-    padding: 15px;
+    padding: 35px 15px;
     margin: 5px;
     display: flex;
     justify-content: space-between;
